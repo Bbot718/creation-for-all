@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import './style/css/main.css'
 
 import Main from './components/pages/main';
-import Dashboard from './components/pages/dashboard';
+import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (

@@ -1,24 +1,41 @@
-/*
+
 @font-face {
-font-family: 'euclid_flexbold';
-src:  url('../../assets/fonts/euclidflex-bold-webfont.woff') format('woff'),
-        url('../../assets/fonts/euclidflex-bold-webfont.woff2') format('woff2');  
-font-weight: bold;
-font-style: normal;
+  font-family: 'zarid_bold';
+  src:    url('../../assets/fonts/Zarid-bold.otf') format("opentype");
 }
 
 @font-face {
-font-family: 'euclid_flexregular';
-src: url('../../assets/fonts/EuclidFlex-Regular_webfont.woff2') format('woff2'),
-        url('../../assets/fonts/euclidflex-regular-webfont.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+  font-family: 'zarid_regular';
+  src:    url('../../assets/fonts/Zarid-regular.otf') format("opentype");
+
 }
 
-.primary-heading{
-font-family: 'euclid_flexbold';
-font-size: 14.552rem;
+@font-face {
+  font-family: 'gt_alpin_bold';
+  src:    url('../../assets/fonts/GT_Alpina_bold.otf') format("opentype");
 
-@include respond(sm) {font-size: 3.815rem} 
 }
-*/
+
+@font-face {
+  font-family: 'gt_alpin_regular';
+  src:    url('../../assets/fonts/GT_Alpina_regular.otf') format("opentype");
+
+}
+
+.secondary-heading{
+  font-family: 'gt_alpin_bold';
+  font-size: 5rem;
+  
+  @include respond(sm) {font-size: 3.815rem}   
+}
+
+.small-heading{
+  font-family: 'gt_alpin_regular';
+  font-size: .8rem;
+}
+
+.regular-text{
+  font-family: 'gt_alpin_regular';
+  font-size: 1rem;
+}
+
