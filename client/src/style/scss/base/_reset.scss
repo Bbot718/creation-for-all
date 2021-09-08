@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  *::-webkit-scrollbar{display: none;}
+}
+
+html{
+  @include respond(xxl) {font-size: $xxl-scale;}
+  @include respond(xl) {font-size: $xl-scale;}
+  @include respond(l) { font-size: $l-scale;}
+  @include respond(md) { font-size: $md-scale;}
+  @include respond(sm) {font-size: $sm-scale;}
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {display: none;}
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;  
+} 
+
