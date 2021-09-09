@@ -112,6 +112,11 @@ a {
   font-size: 1rem;
 }
 
+.bold-text {
+  font-family: 'gt_alpin_bold';
+  font-size: 1rem;
+}
+
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -147,7 +152,8 @@ input[type=text] {
 }
 
 button {
-  display: block;
+  cursor: pointer;
+  display: inline-block;
   background: black;
   color: white;
   padding: .25rem .5rem;
@@ -156,6 +162,17 @@ button {
 
 .private {
   width: inherit;
+}
+
+.private__logout {
+  cursor: pointer;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
+
+.private__logout:hover {
+  text-decoration: underline;
 }
 
 .login {
@@ -205,5 +222,63 @@ button {
 
 .element-toggle__toggled {
   display: hidden;
+}
+
+.users-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .users-dashboard {
+    margin: 0;
+  }
+}
+
+.users-dashboard__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .users-dashboard__item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .users-dashboard__item:first-child {
+    border-top: none;
+  }
+}
+
+.users-dashboard__item:last-child {
+  border-bottom: 1px solid black;
+}
+
+.users-dashboard__input {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users-dashboard__button {
+  padding: 0 .5rem;
+  width: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .users-dashboard__button {
+    width: 33%;
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

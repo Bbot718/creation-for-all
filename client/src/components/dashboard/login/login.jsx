@@ -17,16 +17,13 @@ const Login = (props) => {
     })
     .then((response) => {
       if(response.data.message){
-        props.setLoginStatus(response.data.message)
+        props.setLoginStatus(response.data.message, false)
       }
       else{
-        props.setLoginStatus(true)
+        props.setLoginStatus(username, true)
       }
-      
-    
     })
     .catch(error => console.log(error.response));
-    
   };
 
   return (

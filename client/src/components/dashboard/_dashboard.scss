@@ -25,6 +25,7 @@ input{
     margin-bottom: 1rem;
     padding: .5rem 0rem;
 
+
     &:focus{outline: none;}
     &[type=text]{
         font-family: 'gt_alpin_regular';
@@ -32,8 +33,10 @@ input{
     }
 }
 
+
 button{
-    display: block;
+    cursor: pointer;
+    display: inline-block;
     background: black;
     color: white;
     padding: .25rem .5rem;
@@ -42,4 +45,15 @@ button{
 
 .private{
     width: inherit;
+
+    &__logout{
+        cursor: pointer;
+        margin-top: 2rem;
+        display: block;
+        text-align: center;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }

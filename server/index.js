@@ -32,9 +32,30 @@ app.post('/login', (req, res) => {
     })
 })
 
-app.get('/getLogin', (req, res) => {
+app.get('/users', (req, res) => {
     db.query("SELECT * FROM T_LOGIN", 
     (err, result) => {res.send(result)})
+})
+
+app.post('/register', (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    db.query("INSERT INTO T_LOGIN (username, password) VALUES (?,?)", 
+    [username, password], 
+    (err, result) => {
+        console.log(err);
+    })
+})
+
+app.post('/delete_user', (req, res) => {
+    const id = req.body.id;
+
+    db.query("DELETE FROM T_LOGIN WHERE login_id = ?", 
+    [id],
+    (err, result) => {
+        console.log(err);
+    })
 })
 
 app.listen(3001, () => {

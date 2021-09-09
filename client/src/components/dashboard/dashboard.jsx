@@ -6,9 +6,16 @@ import Private from './private';
 
 const Dashboard = (props) => {
   const [loginStatus, setLoginStatus] = useState();
+  const [isLogin, setIsLogin] = useState();
 
-  const SetLoginStatus = (status) => {
+  const SetLoginStatus = (status, isLogin) => {
     setLoginStatus(status);
+    setIsLogin(isLogin);
+  }
+
+  const Logout = () => {
+    setIsLogin(false);
+    setLoginStatus("");
   }
 
   return(
@@ -16,7 +23,7 @@ const Dashboard = (props) => {
       <div className="dashboard__title">
         <span className="secondary-heading">Creation For All</span>
       </div>
-      {(loginStatus === true) ? <Private /> : <Login loginStatus={loginStatus} setLoginStatus={SetLoginStatus} />}
+      {(isLogin === true) ? <Private user={loginStatus} logout={Logout} /> : <Login loginStatus={loginStatus} setLoginStatus={SetLoginStatus} />}
     </div>
   )
 }
