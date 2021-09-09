@@ -29,6 +29,13 @@
   @include respond(sm) {font-size: 3.815rem}   
 }
 
+.tertiary-heading{
+  font-family: 'gt_alpin_bold';
+  font-size: 3rem;
+  
+  @include respond(sm) {font-size: 3.815rem}   
+}
+
 .small-heading{
   font-family: 'gt_alpin_regular';
   font-size: .8rem;
