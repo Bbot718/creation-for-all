@@ -14,31 +14,31 @@
 
 @media only screen and (min-width: 1400px) {
   html {
-    font-size: 100%;
+    font-size: 130%;
   }
 }
 
 @media only screen and (max-width: 1400px) {
   html {
-    font-size: 70%;
+    font-size: 120%;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   html {
-    font-size: 60%;
+    font-size: 110%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   html {
-    font-size: 50%;
+    font-size: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 100%;
+    font-size: 80%;
   }
 }
 
@@ -224,6 +224,31 @@ button {
   display: hidden;
 }
 
+.page-selection-dashboard {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  border: .5px solid black;
+}
+
+.page-selection-dashboard__button {
+  flex: 1;
+  padding: 1rem 0;
+  border: .5px solid black;
+  background-color: white;
+  font-family: 'gt_alpin_regular';
+  color: black;
+  text-align: center;
+}
+
+.page-selection-dashboard__button--selected {
+  background-color: black;
+  color: white;
+  font-family: 'gt_alpin_bold' !important;
+  cursor: pointer;
+}
+
 .users-dashboard {
   display: flex;
   flex-direction: column;
@@ -280,5 +305,9 @@ button {
     width: 33%;
     margin: 1rem 0;
   }
+}
+
+.carouselle-dashboard {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */

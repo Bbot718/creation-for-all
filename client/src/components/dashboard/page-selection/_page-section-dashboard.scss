@@ -1,0 +1,24 @@
+.page-selection-dashboard{ 
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  border: .5px solid black;
+
+  &__button{
+    flex: 1;
+    padding: 1rem 0;
+    border: .5px solid black;
+    background-color: white;
+    font-family: 'gt_alpin_regular';
+    color: black;
+    text-align: center;
+
+    &--selected{
+      background-color: black;
+      color: white;
+      font-family: 'gt_alpin_bold' !important;
+      cursor: pointer;
+    }
+  }
+}
