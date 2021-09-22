@@ -191,7 +191,7 @@ button {
 .element-toggle {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -309,5 +309,29 @@ button {
 
 .carouselle-dashboard {
   margin: 2rem 0;
+}
+
+.content-dashboard {
+  margin: 2rem 0;
+}
+
+.content-dashboard__container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.content-dashboard__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  width: 50%;
+}
+
+.content-dashboard__language {
+  display: inline-block;
+  transform: rotate(-90deg);
 }
 /*# sourceMappingURL=main.css.map */

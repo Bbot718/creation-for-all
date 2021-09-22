@@ -62,7 +62,20 @@ app.get('/page', (req, res) => {
     db.query("SELECT * FROM T_PAGE", 
     (err, result) => {res.send(result);})
 })
+
+app.get('/language', (req, res) => {
+    db.query("SELECT * FROM T_LANGUAGE", 
+    (err, result) => {res.send(result);})
+})
+
+app.get('/content', (req, res) => {
+    const page = req.query.page;
+
+    db.query("SELECT * FROM T_CONTENT WHERE page_id = ?", [page] ,
+    (err, result) => {res.send(result);})
+})
+
  
 app.listen(3001, () => {
     console.log('running on port 3001')
-});
+})

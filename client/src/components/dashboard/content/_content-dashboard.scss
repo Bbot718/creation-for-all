@@ -1,0 +1,26 @@
+.content-dashboard{
+  margin: 2rem 0;
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 50%;
+  }
+
+  &__language{
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+}
+
+
+
