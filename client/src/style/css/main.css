@@ -80,6 +80,29 @@ a {
   src: url("../../assets/fonts/GT_Alpina_regular.otf") format("opentype");
 }
 
+.primary-heading {
+  font-family: 'gt_alpin_bold';
+  font-size: 9.313rem;
+  padding: 6rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .primary-heading {
+    font-size: 3.815rem;
+  }
+}
+
+.primary-heading--small {
+  font-size: 1.953rem;
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .primary-heading--small {
+    font-size: 3.815rem;
+  }
+}
+
 .secondary-heading {
   font-family: 'gt_alpin_bold';
   font-size: 5rem;
@@ -333,5 +356,13 @@ button {
 .content-dashboard__language {
   display: inline-block;
   transform: rotate(-90deg);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  transition: all 2ms;
 }
 /*# sourceMappingURL=main.css.map */

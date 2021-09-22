@@ -22,6 +22,19 @@
 
 }
 
+.primary-heading{
+  font-family: 'gt_alpin_bold';
+  font-size: 9.313rem;
+  padding: 6rem 0;
+  @include respond(sm) {font-size: 3.815rem}   
+  
+  &--small{
+    font-size: 1.953rem;
+    padding: 1rem 0;
+    @include respond(sm) {font-size: 3.815rem}   
+  }
+}
+
 .secondary-heading{
   font-family: 'gt_alpin_bold';
   font-size: 5rem;

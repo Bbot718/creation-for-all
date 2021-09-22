@@ -1,0 +1,7 @@
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: $line-weight solid black;
+  transition: all 2ms;
+}
