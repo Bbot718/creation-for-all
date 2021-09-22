@@ -1,0 +1,35 @@
+.element-toggle{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+
+  @include respond(sm) {
+    width: 100%;
+    padding: 0 1rem ;
+  }
+
+  &__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    border-bottom: 1px solid black;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__arrow{
+    display: inline-block;
+    transform-origin: center;
+  }
+
+  &__toggled{
+    display: hidden;
+
+
+  }
+}

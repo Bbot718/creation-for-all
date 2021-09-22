@@ -1,0 +1,59 @@
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 100%;
+
+    margin: 0 auto;
+    
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding: .5rem 0rem;
+
+
+    &:focus{outline: none;}
+    &[type=text]{
+        font-family: 'gt_alpin_regular';
+        font-size: 1rem;
+    }
+}
+
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: .25rem .5rem;
+    border: none;
+}
+
+.private{
+    width: inherit;
+
+    &__logout{
+        cursor: pointer;
+        margin-top: 2rem;
+        display: block;
+        text-align: center;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

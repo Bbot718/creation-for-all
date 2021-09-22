@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import './style/css/main.css'
 
 import Main from './components/pages/main';
-import Backend from './components/pages/backend';
+import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <Redirect to="/main/" />
         </Route>
         <Route path="/main/" component={Main} />
-        <Route path={"/backend"} component={Backend} />
+        <Route path={"/dashboard"} component={Dashboard} />
       </Router>
     </div>
   );
