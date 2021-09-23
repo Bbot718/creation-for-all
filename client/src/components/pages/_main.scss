@@ -1,0 +1,12 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #fedda8;
+  transition: all $transition-speed ease;
+
+  &--alt-color{
+    background: #d2c8e4;
+    transition: all $transition-speed ease;
+  }
+}

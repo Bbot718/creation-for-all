@@ -1,0 +1,29 @@
+.page-selection{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+
+  border-bottom: $line-weight solid black;
+
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    list-style: none;
+    padding: 1rem 0;
+    border-right: $line-weight solid black;
+    &:last-child{border: none;}
+    cursor: pointer;
+
+    &--selected{
+      background-color: black;
+      color: white;
+      mix-blend-mode: multiply;
+
+      &--alt-color{
+        //color: #d2c8e4;;
+      }
+    }
+  }
+}
