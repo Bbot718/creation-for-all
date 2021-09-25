@@ -7,9 +7,14 @@ const Title = (props) => {
     (props.toggle) ? setToggle("primary-heading--small") : setToggle("");
   }, [props.toggle])
 
+  const  HandleClick = () =>{
+    props.switchPage(1);
+    props.languageSwitch(null);
+  }
+
   return(
     <div className="title">
-      <div className={"primary-heading " + toggle} onClick={() => props.switchPage(1)}>Creation For All</div>
+      <div className={"primary-heading " + toggle} onClick={HandleClick}>Creation For All</div>
     </div>
   )
 }

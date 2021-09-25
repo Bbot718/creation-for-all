@@ -12,6 +12,11 @@
     height: auto;
     padding: 0 .15rem;
 
+    @include respond(sm) {
+      max-height: 2.5rem;
+      padding: 0 1rem;
+    }
+
     cursor: pointer;
   }
 }

@@ -12,14 +12,16 @@
     flex-grow: 1;
     list-style: none;
     padding: 1rem 0;
-    border-right: $line-weight solid black;
-    &:last-child{border: none;}
+    margin: 0 calc(#{$line-weight} / 2);
+    &:first-child{margin-left: 0;}
+    &:last-child{margin-right: none;}
     cursor: pointer;
 
-    &--selected{
+    &--selected, &:hover{
       background-color: black;
       color: white;
       mix-blend-mode: multiply;
+      margin: 0 calc(#{$line-weight} / 2);
 
       &--alt-color{
         //color: #d2c8e4;;

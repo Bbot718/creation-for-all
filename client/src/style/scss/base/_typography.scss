@@ -24,7 +24,7 @@
 
 .primary-heading{
   font-family: 'gt_alpin_bold';
-  font-size: 9.313rem;
+  font-size: 7.7rem;
   padding: 3rem 0;
   user-select: none;
   cursor: pointer; 
@@ -40,12 +40,12 @@
 }
 
 .secondary-heading{
-  font-family: 'gt_alpin_bold';
+  font-family: 'gt_alpin_regular';
   font-size: 1.953rem;
   user-select: none; 
   @include respond(sm) {font-size: 1.953rem}   
 
-  &--selected{font-family: 'gt_alpin_regular';}
+  &--selected{font-family: 'gt_alpin_bold';}
 }
 
 .tertiary-heading{
@@ -62,7 +62,8 @@
 
 .regular-text{
   font-family: 'gt_alpin_regular';
-  font-size: 1rem;
+  font-size: 1.953rem;
+  @include respond(sm) {font-size: 1.953rem}  
 }
 
 .bold-text{

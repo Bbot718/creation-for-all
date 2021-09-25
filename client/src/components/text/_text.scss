@@ -1,3 +1,99 @@
 .text{
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
+  width: 100vw;
+  min-height: 10rem;
+
+  @include respond(sm) {flex-direction: column;}   
+}
+
+.text-item{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  border-right: $line-weight solid black;
+  transition: all $transition-speed ease;
+  width: 5rem;
+  overflow-x: hidden;
+  &:last-child{border-right: none};
+
+  &--default{
+    flex-grow: 1;
+    transition: all $transition-speed ease;
+  }
+
+  &--selected{
+    flex-grow: 1;
+
+    & .text-item__button{
+      width: 16rem;
+      flex-grow: 0;
+      background-color: black;
+      color: white;
+      mix-blend-mode: multiply;
+      transition: all $transition-speed ease;
+    }
+
+    & .text-item__text{
+      display: inline;
+      
+    }
+  }
+  
+  @include respond(sm) {
+    flex-direction: column;
+    border-right: none;
+    width: auto;
+    flex-grow: 1;
+    border-bottom: $line-weight solid black;
+    &:last-child{border-bottom: none};
+  }   
+
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    left: 0;
+    width: 5rem;
+
+
+
+    &__text{
+
+      transform: rotate(-90deg);
+      @include respond(sm) { transform: rotate(0deg);}
+    }
+
+    &:hover{
+      cursor: pointer;
+      background-color: black;
+      mix-blend-mode: multiply;
+      
+
+      & .text-item__button__text{
+        color: white;
+        
+      }
+    }
+  }
+
+  &__text{
+    //flex-grow: 0;
+    overflow: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    & p{
+      
+      margin: 3rem;
+    }
+  }
 }

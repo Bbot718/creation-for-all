@@ -68,6 +68,7 @@ app.get('/language', (req, res) => {
     (err, result) => {res.send(result);})
 })
 
+
 app.get('/content', (req, res) => {
     const page = req.query.page;
 
